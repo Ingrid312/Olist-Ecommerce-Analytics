@@ -1,0 +1,4 @@
+﻿review_group,customer_count,repeat_customers,repeat_rate_90d_pct,review_group_cn
+1_low_score,9755,79,0.81,差评（1–2星）
+2_mid_score,6182,60,0.97,中评（3星）
+3_high_score,56315,616,1.09,好评（4–5星）

@@ -1,0 +1,3 @@
+﻿delivery_status,reviewed_orders,avg_review_score,low_score_orders,low_score_pct,delivery_status_cn
+late,6381,2.27,3983,62.42,延迟
+on_time,89443,4.29,8289,9.27,准时

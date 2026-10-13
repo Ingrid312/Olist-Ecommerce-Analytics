@@ -1,0 +1,6 @@
+﻿delay_group,reviewed_orders,avg_score,low_score_pct,delay_group_cn
+0_on_time,89443,4.29,9.27,准时送达
+1_1-3_days,1852,3.29,32.13,延迟1–3天
+2_4-7_days,1748,2.1,67.68,延迟4–7天
+3_8-14_days,1446,1.67,80.15,延迟8–14天
+4_15+_days,1335,1.72,78.35,延迟15天及以上
