@@ -16,9 +16,11 @@
 
 ![Page 2 — Delivery Performance & Customer Experience](screenshots/02_delivery_and_experience.png)
 
-> **Note:** The screenshots show the completed Power BI report. The editable `.pbix` file is not included in this initial repository package; add it to `dashboard/` when available. The `powerbi_data/` folder contains all ten aggregated CSV tables used to populate the visuals.
+> **Editable Power BI report / 可编辑 Power BI 报表**  
+> 📥 **[Download the complete Power BI report (.pbix) / 下载完整 Power BI 报表](./Olist_电商经营与客户体验分析.pbix)**  
+> Open the downloaded file with **Power BI Desktop** to explore both report pages. If your local data folder differs from the original creator's environment, update the CSV data-source paths using Power Query. All ten aggregated source tables are included in [`powerbi_data/`](powerbi_data/).
 >
-> **说明：** 本仓库初版包含最终看板截图及十张汇总数据表；尚未包含可编辑的 `.pbix` 文件。后续可将 Power BI Desktop 保存的文件添加到 `dashboard/`。
+> **说明：** 两页看板截图可直接在 GitHub 预览；可编辑的 `.pbix` 原文件已上传。下载后使用 Power BI Desktop 打开，如出现数据源路径提示，可将其重新指向本仓库的 `powerbi_data/` 文件夹。
 
 ## Key business findings / 核心业务发现
 
@@ -58,6 +60,7 @@
 ```text
 .
 ├── README.md
+├── Olist_电商经营与客户体验分析.pbix    # Editable Power BI dashboard / 完整报表
 ├── notebooks/
 │   └── Olist_Analysis.ipynb       # Python + SQL full analysis
 ├── powerbi_data/                 # 10 aggregated CSV tables for Power BI
@@ -82,7 +85,8 @@
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Open [`notebooks/Olist_Analysis.ipynb`](notebooks/Olist_Analysis.ipynb) with Jupyter Notebook / JupyterLab; run all cells from top to bottom.
 4. The analysis shows SQL-driven metrics, cohort analysis, customer review comparisons, and the association test.
-5. To recreate the Power BI pages, load the ten aggregated tables in [`powerbi_data/`](powerbi_data/) and follow [`docs/dashboard_build.md`](docs/dashboard_build.md).
+5. **Open the completed report:** download [`Olist_电商经营与客户体验分析.pbix`](./Olist_电商经营与客户体验分析.pbix) and open it in **Power BI Desktop**. If Power BI prompts for missing local CSV paths, repoint them to the files in [`powerbi_data/`](powerbi_data/), then refresh.
+6. **Rebuild or customize the visuals:** import the ten aggregated tables from [`powerbi_data/`](powerbi_data/) and follow [`docs/dashboard_build.md`](docs/dashboard_build.md).
 
 **Important data definitions:** sales here means sum of `order_items.price` for delivered orders (excluding shipping/freight and costs), **not** audited revenue or profit. Core delivery-rate denominators exclude records missing required actual delivery dates; review-based rates use reviewed orders. Monthly trends and 90-day cohorts use different, explicitly stated observation windows.
 
